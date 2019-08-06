@@ -9,9 +9,9 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"wallet_beego/utils"
-	"go-web3"
-	"go-web3/providers"
-	"bitcoin"
+	"github.com/regcostajr/go-web3"
+	"github.com/regcostajr/go-web3/providers"
+	"wallet_beego/rpc/btc"
 )
 
 type base struct {

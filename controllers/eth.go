@@ -7,9 +7,9 @@
 package controllers
 
 import (
-	"go-web3/eth/block"
+	"github.com/regcostajr/go-web3/eth/block"
 	"math/big"
-	"go-web3/dto"
+	"github.com/regcostajr/go-web3/dto"
 )
 
 type EthController struct {

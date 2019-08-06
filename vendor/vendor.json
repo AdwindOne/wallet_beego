@@ -1,0 +1,221 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "pNMJDW7VtE7wp6GTAHPag1VZxzk=",
+			"path": "github.com/astaxie/beego",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "qFmnMbrtRzi14+5scXmKq+/9xyU=",
+			"path": "github.com/astaxie/beego/config",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "1Km5uX1hA20jXHQ//FInzcVSWAQ=",
+			"path": "github.com/astaxie/beego/context",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "6CUKSTe7nirUqQ7kctbv7kkF1eA=",
+			"path": "github.com/astaxie/beego/context/param",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "HMU+NOaq+G8DCbMO8eTfcngwfBs=",
+			"path": "github.com/astaxie/beego/grace",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "4KHPBEUsFohBquGuV7Rj3f6zCaA=",
+			"path": "github.com/astaxie/beego/logs",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "RtIdQHyuDKhTl9qlgVftr5tylR8=",
+			"path": "github.com/astaxie/beego/session",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "HLDlWdDwL89OlJogJa+jFJewOQc=",
+			"path": "github.com/astaxie/beego/toolbox",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "wyz5HgdoDurteHhp63m+CwKx7zg=",
+			"path": "github.com/astaxie/beego/utils",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "YYC+fsDtLXfxH+BqpAsVJN3/lUY=",
+			"path": "github.com/jtolds/gls",
+			"revision": "b4936e06046bbecbb94cae9c18127ebe510a2cb9",
+			"revisionTime": "2018-11-10T20:28:10Z"
+		},
+		{
+			"checksumSHA1": "uc7Qhr5+cEW8fEUB3DNNoMKiI5g=",
+			"path": "github.com/maiiz/coinlib/rpc",
+			"revision": "525ec87de06f78c7fbec8c2c4e77e64790e79121",
+			"revisionTime": "2018-06-26T02:59:20Z"
+		},
+		{
+			"checksumSHA1": "YIUOkRMbgM/dfxiikQ2pWHGRuSM=",
+			"path": "github.com/regcostajr/go-web3",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "WO8q+9GNTy27L1ewJrk6NejP4nQ=",
+			"path": "github.com/regcostajr/go-web3/complex/types",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "bjxmwKv97Bx/KGELqxg8i4h4+5Q=",
+			"path": "github.com/regcostajr/go-web3/constants",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "crf5AfE+WO75X8VFrWikFBVi1eQ=",
+			"path": "github.com/regcostajr/go-web3/dto",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "83Cd2Ew13RlajxoUIV2mF4Go3ns=",
+			"path": "github.com/regcostajr/go-web3/eth",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "oELTfAq3tqRO7RQ4/mWDBgcuioI=",
+			"path": "github.com/regcostajr/go-web3/eth/block",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "z85KVuYSOe0pZYMLblS0QHlI4VA=",
+			"path": "github.com/regcostajr/go-web3/net",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "50t+pctwrTN7IswHgdLndBoabl8=",
+			"path": "github.com/regcostajr/go-web3/personal",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "2Q0gmRySNGJ5sncIk+ZZ61wdRi0=",
+			"path": "github.com/regcostajr/go-web3/providers",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "4RoWipirJ7xpnbJjQzaOTTfBFuU=",
+			"path": "github.com/regcostajr/go-web3/providers/util",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "gbjS2ueL8LAhW076+ZaD0TgAU3w=",
+			"path": "github.com/regcostajr/go-web3/utils",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "SnC+Upr5nhBzry9M1L5Auj/QYeU=",
+			"path": "github.com/rs/cors",
+			"revision": "db0fe48135e83b5812a5a31be0eea66984b1b521",
+			"revisionTime": "2019-07-09T00:57:03Z"
+		},
+		{
+			"checksumSHA1": "CcikTYxxZMd75GL3UwfibQIAWzw=",
+			"path": "github.com/shiena/ansicolor",
+			"revision": "a422bbe96644373c5753384a59d678f7d261ff10",
+			"revisionTime": "2015-11-19T15:19:21Z"
+		},
+		{
+			"checksumSHA1": "I/JR1ht+sWwpKDTmGqL0qU0vFlE=",
+			"path": "github.com/smartystreets/assertions",
+			"revision": "8df9578143a50c65c2675d8e3207386ca9375d31",
+			"revisionTime": "2019-08-01T02:41:32Z"
+		},
+		{
+			"checksumSHA1": "TgMEC4ZDhZ1rxdC0FOfreLtzcLc=",
+			"path": "github.com/smartystreets/assertions/internal/go-diff/diffmatchpatch",
+			"revision": "8df9578143a50c65c2675d8e3207386ca9375d31",
+			"revisionTime": "2019-08-01T02:41:32Z"
+		},
+		{
+			"checksumSHA1": "bEq2actOyCy5xDJZryVU18ZNVTE=",
+			"path": "github.com/smartystreets/assertions/internal/go-render/render",
+			"revision": "8df9578143a50c65c2675d8e3207386ca9375d31",
+			"revisionTime": "2019-08-01T02:41:32Z"
+		},
+		{
+			"checksumSHA1": "/Mlt459vsuvFRHpxOiCNMasmE28=",
+			"path": "github.com/smartystreets/assertions/internal/oglematchers",
+			"revision": "8df9578143a50c65c2675d8e3207386ca9375d31",
+			"revisionTime": "2019-08-01T02:41:32Z"
+		},
+		{
+			"checksumSHA1": "LYtCQrTRen/NK7FDn6+/jtnxkfk=",
+			"path": "github.com/smartystreets/goconvey/convey",
+			"revision": "505e419363375c0dc132d3ac02632a4ee32199ca",
+			"revisionTime": "2019-07-31T23:36:26Z"
+		},
+		{
+			"checksumSHA1": "6hm9X0fDAe0Iyn/l1yVx3iImoSY=",
+			"path": "github.com/smartystreets/goconvey/convey/gotest",
+			"revision": "505e419363375c0dc132d3ac02632a4ee32199ca",
+			"revisionTime": "2019-07-31T23:36:26Z"
+		},
+		{
+			"checksumSHA1": "wsRDRmgQH9fFiqIW6aTjBMJEpsg=",
+			"path": "github.com/smartystreets/goconvey/convey/reporting",
+			"revision": "505e419363375c0dc132d3ac02632a4ee32199ca",
+			"revisionTime": "2019-07-31T23:36:26Z"
+		},
+		{
+			"checksumSHA1": "J43LAg1rYN1mK/HbXc06EJQ6VbM=",
+			"origin": "github.com/astaxie/beego/vendor/golang.org/x/crypto/acme",
+			"path": "golang.org/x/crypto/acme",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "J7oQm93/jAKoG6lW1wcTt4nIIdo=",
+			"origin": "github.com/astaxie/beego/vendor/golang.org/x/crypto/acme/autocert",
+			"path": "golang.org/x/crypto/acme/autocert",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		},
+		{
+			"checksumSHA1": "7EZyXN0EmZLgGxZxK01IJua4c8o=",
+			"origin": "github.com/regcostajr/go-web3/vendor/golang.org/x/net/websocket",
+			"path": "golang.org/x/net/websocket",
+			"revision": "555e83b623ddf0dc76ba43eab52b699b210f2d08",
+			"revisionTime": "2018-06-09T03:14:49Z"
+		},
+		{
+			"checksumSHA1": "d3jYBfW+YmOxsa5o8m6XyywVbIo=",
+			"origin": "github.com/astaxie/beego/vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "58b2ac702cf292694160214cac6cae793c1ed002",
+			"revisionTime": "2019-04-29T10:19:22Z"
+		}
+	],
+	"rootPath": "wallet_beego"
+}
