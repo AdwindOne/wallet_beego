@@ -4,8 +4,8 @@ import (
 	"wallet_beego/controllers"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
-	"go-web3"
-	"go-web3/providers"
+	"github.com/regcostajr/go-web3"
+	"github.com/regcostajr/go-web3/providers"
 	"fmt"
 )
 

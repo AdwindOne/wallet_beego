@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec6f82eb-a35e-4965-86c9-922f33178bae" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/rpc/btc/rpc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/btc/rpc_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/eth.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/eth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bitcoin/rpc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bitcoin/rpc_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/.idea/go-web3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/cacl/test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/complex/types/complex-int.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/complex/types/complex-string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/constants/error-constants.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/db/db.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/dto/block.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/dto/request-result.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/dto/shh-post.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/dto/syncing.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/dto/transaction.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/eth/block/default-block-number.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/eth/contract.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/eth/eth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/glide.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/glide.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/net/net.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/personal/personal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/providers/http-provider.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/providers/ipc-provider.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/providers/provider-interface.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/providers/util/json-rpc-object.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/providers/websocket-provider.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/shh/shh.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-blocknumber_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-coinbase_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-contract_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-estimategas_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-gasprice_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-getbalance_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-getblockbyhash_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-getblockbynumber_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-getblocktransactioncountbyhash_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-getblocktransactioncountbynumber_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-getcode_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-gettransactionbyblockhashandindex_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-gettransactionbyblocknumberandindex_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-gettransactionbyhash_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-gettransactioncount_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-gettransactionreceipt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-getunclecountbyblockhash_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-getunclecountbyblocknumber_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-hashrate_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-mining_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-protocolversion_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-sendtransaction_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-signtransaction_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/eth/eth-syncing_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/helpers/testhelper.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/net/net-getpeercount_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/net/net-listening_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/net/net-version_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/personal/personal-listaccounts_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/personal/personal-newaccount_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/personal/personal-sendtransaction_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/personal/personal-unlockaccount_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/providers/http-provider_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/providers/ipc-provider_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/providers/websocket-provider_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/resources/simple-token.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/utils/utils-sha3_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/test/web3/web3-clientVersion_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/utils/helpers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/utils/utils.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/CONTRIBUTORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/PATENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/asm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/constants.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/instructions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/instructions_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/setter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/testdata/all_instructions.bpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/testdata/all_instructions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_aluop_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_bpf_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_extension_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_instructions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_jump_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_load_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_ret_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_scratch_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/bpf/vm_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/codereview.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/context.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/context_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/ctxhttp/ctxhttp_17_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/ctxhttp/ctxhttp_pre17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/ctxhttp/ctxhttp_pre17_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/ctxhttp/ctxhttp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/go17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/go19.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/pre_go17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/pre_go19.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/context/withtimeout_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/dict/dict.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/dns/dnsmessage/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/dns/dnsmessage/message.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/dns/dnsmessage/message_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/atom/atom.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/atom/atom_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/atom/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/atom/table.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/atom/table_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/charset.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/charset_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/HTTP-charset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/HTTP-vs-UTF-8-BOM.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/HTTP-vs-meta-charset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/HTTP-vs-meta-content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/No-encoding-declaration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/UTF-16BE-BOM.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/UTF-16LE-BOM.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/UTF-8-BOM-vs-meta-charset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/UTF-8-BOM-vs-meta-content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/meta-charset-attribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/charset/testdata/meta-content-attribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/const.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/doctype.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/entity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/entity_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/escape.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/escape_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/foreign.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/node.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/node_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/parse.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/parse_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/render.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/render_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/go1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/adoption01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/adoption02.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/comments01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/doctype01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/entities01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/entities02.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/html5test-com.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/inbody01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/isindex.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/pending-spec-changes-plain-text-unsafe.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/pending-spec-changes.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/plain-text-unsafe.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/scriptdata01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/scripted/adoption01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/scripted/webkit01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tables01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests10.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests11.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests12.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests14.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests15.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests16.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests17.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests18.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests19.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests20.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests21.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests22.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests23.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests24.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests25.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests26.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests3.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests4.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests5.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests6.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests7.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests8.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests9.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tests_innerHTML_1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/tricky01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/webkit01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/testdata/webkit/webkit02.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/token.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/html/token_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http/httpproxy/export_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http/httpproxy/go19_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http/httpproxy/proxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http/httpproxy/proxy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/ciphers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/ciphers_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/client_conn_pool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/configure_transport.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/databuffer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/databuffer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/errors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/errors_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/flow.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/flow_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/frame.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/frame_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/go16.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/go17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/go17_not18.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/go18.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/go18_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/go19.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/go19_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/gotrack.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/gotrack_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/Dockerfile.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/deployment-prod.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/h2demo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/launch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/rootCA.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/rootCA.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/rootCA.srl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2demo/tmpl.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2i/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/h2i/h2i.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/headermap.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/hpack/encode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/hpack/encode_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/hpack/hpack.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/hpack/hpack_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/hpack/huffman.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/hpack/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/hpack/tables_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/http2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/http2_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/not_go16.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/not_go17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/not_go18.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/not_go19.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/pipe.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/pipe_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/server_push_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/server_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/testdata/draft-ietf-httpbis-http2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/transport.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/transport_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/writesched.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/writesched_priority.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/writesched_priority_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/writesched_random.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/writesched_random_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/writesched_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/http2/z_spec_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/dstunreach.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/echo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/endpoint.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/extension.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/extension_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/helper_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/interface.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/ipv4.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/ipv4_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/ipv6.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/listen_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/listen_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/message.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/message_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/messagebody.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/mpls.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/multipart.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/multipart_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/packettoobig.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/paramprob.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/ping_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/sys_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/icmp/timeexceeded.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/idna/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/idna/idna.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/idna/idna_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/idna/punycode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/idna/punycode_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/idna/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/idna/trie.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/idna/trieval.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/iana/const.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/iana/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/helper_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/helper_nobsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/helper_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/helper_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/helper_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/helper_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/interface.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/rlimit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/nettest/stack.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/cmsghdr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/cmsghdr_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/cmsghdr_linux_32bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/cmsghdr_linux_64bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/cmsghdr_solaris_64bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/cmsghdr_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/defs_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/defs_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/defs_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/defs_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/defs_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/defs_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/defs_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/error_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/error_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/iovec_32bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/iovec_64bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/iovec_solaris_64bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/iovec_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/mmsghdr_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/mmsghdr_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/msghdr_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/msghdr_bsdvar.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/msghdr_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/msghdr_linux_32bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/msghdr_linux_64bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/msghdr_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/msghdr_solaris_64bit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/msghdr_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/rawconn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/rawconn_mmsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/rawconn_msg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/rawconn_nommsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/rawconn_nomsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/rawconn_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/reflect.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/socket.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/socket_go1_9_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/socket_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_bsdvar.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_386.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_arm64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_mips.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_mips64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_mips64le.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_mipsle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_ppc64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_ppc64le.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_s390x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_linux_s390x.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_solaris_amd64.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/sys_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_darwin_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_darwin_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_darwin_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_darwin_arm64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_dragonfly_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_freebsd_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_freebsd_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_freebsd_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_arm64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_mips.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_mips64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_mips64le.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_mipsle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_ppc64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_ppc64le.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_linux_s390x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_netbsd_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_netbsd_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_netbsd_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_openbsd_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_openbsd_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_openbsd_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/socket/zsys_solaris_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/timeseries/timeseries.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/internal/timeseries/timeseries_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/batch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/bpf_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/control.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/control_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/control_pktinfo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/control_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/control_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/control_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/control_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/defs_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/defs_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/defs_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/defs_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/defs_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/defs_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/defs_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/dgramopt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/endpoint.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/genericopt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/header.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/header_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/helper.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/iana.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/icmp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/icmp_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/icmp_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/icmp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/multicast_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/multicastlistener_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/multicastsockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/packet.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/packet_go1_8.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/packet_go1_9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/payload.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/payload_cmsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/payload_cmsg_go1_8.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/payload_cmsg_go1_9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/payload_nocmsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/readwrite_go1_8_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/readwrite_go1_9_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/readwrite_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sockopt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sockopt_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sockopt_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_asmreq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_asmreq_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_asmreqn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_asmreqn_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_bpf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_bpf_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_ssmreq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_ssmreq_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/sys_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/unicast_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/unicastsockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_freebsd_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_freebsd_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_freebsd_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_arm64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_mips.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_mips64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_mips64le.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_mipsle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_ppc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_ppc64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_ppc64le.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_linux_s390x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv4/zsys_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/batch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/bpf_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/control.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/control_rfc2292_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/control_rfc3542_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/control_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/control_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/control_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/control_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/defs_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/defs_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/defs_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/defs_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/defs_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/defs_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/defs_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/dgramopt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/endpoint.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/genericopt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/header.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/header_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/helper.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/iana.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/icmp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/icmp_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/icmp_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/icmp_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/icmp_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/icmp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/icmp_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/mocktransponder_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/multicast_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/multicastlistener_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/multicastsockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/payload.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/payload_cmsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/payload_cmsg_go1_8.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/payload_cmsg_go1_9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/payload_nocmsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/readwrite_go1_8_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/readwrite_go1_9_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/readwrite_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sockopt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sockopt_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sockopt_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_asmreq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_asmreq_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_bpf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_bpf_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_ssmreq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_ssmreq_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/sys_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/unicast_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/unicastsockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_freebsd_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_freebsd_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_freebsd_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_arm64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_mips.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_mips64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_mips64le.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_mipsle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_ppc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_ppc64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_ppc64le.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_linux_s390x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/ipv6/zsys_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lex/httplex/httplex.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lex/httplex/httplex_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/address.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/address_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/binary.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/defs_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/lif.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/link.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/link_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/sys.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/sys_solaris_amd64.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/syscall.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/lif/zsys_solaris_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/nettest/conntest.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/nettest/conntest_go16.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/nettest/conntest_go17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/nettest/conntest_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/netutil/listen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/netutil/listen_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/proxy/direct.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/proxy/per_host.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/proxy/per_host_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/proxy/proxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/proxy/proxy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/proxy/socks5.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/publicsuffix/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/publicsuffix/list.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/publicsuffix/list_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/publicsuffix/table.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/publicsuffix/table_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/address.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/address_darwin_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/address_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/binary.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/defs_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/defs_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/defs_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/defs_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/defs_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/interface.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/interface_announce.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/interface_classic.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/interface_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/interface_multicast.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/interface_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/message.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/message_darwin_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/message_freebsd_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/message_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/route.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/route_classic.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/route_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/route_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/sys.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/sys_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/sys_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/sys_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/sys_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/sys_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/syscall.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/zsys_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/zsys_dragonfly.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/zsys_freebsd_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/zsys_freebsd_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/zsys_freebsd_arm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/zsys_netbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/route/zsys_openbsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/trace/events.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/trace/histogram.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/trace/histogram_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/trace/trace.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/trace/trace_go16.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/trace/trace_go17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/trace/trace_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/file_go1.6.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/file_go1.7.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/file_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/if.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/if_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/atom_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/marshal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/marshal_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/read.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/read_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/typeinfo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/xml.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/internal/xml/xml_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/litmus_test_server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/lock.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/lock_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/prop.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/prop_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/webdav.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/webdav_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/xml.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/webdav/xml_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/dial.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/dial_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/exampledial_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/examplehandler_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/hybi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/hybi_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/websocket.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/websocket/websocket_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/xsrftoken/xsrf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/vendor/golang.org/x/net/xsrftoken/xsrf_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go-web3/web3.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rpc/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rpc/client_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rpc/http.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rpc/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/rpc/server_test.go" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="bit.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/bit.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#104#136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/helper.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="result.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/result.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/default.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="net.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/net.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/base.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding>
+                <element signature="e#104#207#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rpc.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc/btc/rpc.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+              <folding>
+                <element signature="e#13#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rpc_test.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rpc/btc/rpc_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+              <folding>
+                <element signature="e#14#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eth.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/eth.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personal.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/personal.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cors</find>
+      <find>ListAccounts</find>
+      <find>GetAccountAddress</find>
+    </findStrings>
+  </component>
+  <component name="GOROOT" path="D:\环境\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/vendor/bitcoin/rpc.go" />
+        <option value="$PROJECT_DIR$/vendor/rpc/http.go" />
+        <option value="$PROJECT_DIR$/controllers/eth.go" />
+        <option value="$PROJECT_DIR$/routers/router.go" />
+        <option value="$PROJECT_DIR$/rpc/btc/rpc.go" />
+        <option value="$PROJECT_DIR$/controllers/base.go" />
+        <option value="$PROJECT_DIR$/rpc/btc/rpc_test.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wallet_beego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wallet_beego" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wallet_beego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wallet_beego" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wallet_beego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wallet_beego" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wallet_beego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wallet_beego" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wallet_beego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wallet_beego" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="btc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wallet_beego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wallet_beego" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wallet_beego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Test.TestClient in wallet_beego/rpc/btc">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="wallet_beego" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="wallet_beego" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="TestClient in wallet_beego/rpc/btc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="wallet_beego" />
+      <working_directory value="$PROJECT_DIR$/rpc/btc" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="wallet_beego/rpc/btc" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestClient$" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Test.TestClient in wallet_beego/rpc/btc" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestClient in wallet_beego/rpc/btc" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestClient_in_wallet_beego_rpc_btc - 2019.08.06 at 14h 35m 34s.xml">
+      <configuration name="TestClient in wallet_beego/rpc/btc" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17962466" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Database" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35643566" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3903819" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vendor/bitcoin/rpc_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#13#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/go-web3/web3.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/rpc/server_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/rpc/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/rpc/http.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/rpc/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#13#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#17#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bitcoin/rpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/maiiz/coinlib/bitcoin/rpc/rpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/default.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/eth.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/net.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/personal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/helper.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/result.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/bit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#104#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc/btc/rpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#13#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/base.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#104#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc/btc/rpc_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="e#14#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
